@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="arrow_carrot-2dwnn_alt1.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+ <body>
+   <div class="all">
+  <header class="header">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="logotype">
+    </a>
+     <nav>
+      
+      <ul class="menu">
+        <li class="menu_list"><a class="menu_link" href="index.html">Главная</a></li>
+        <li class="menu_list"><a class="menu_link" href="students.html">Студенты</a></li>
+        <li class="menu_list"><a class="menu_link menu_link_active" href="about.html">О курсе</a></li>
+        <li class="menu_list"><a class="menu_link" href="contacts.html">Контакты</a></li>
+      </ul>
+     </nav>
+       <a class="button" href="#">Войти</a>
+    </header>
+  <main>
+    <div class="content-about">
+      <h2 class="about">О курсе 📱</h2>
+      <p class="about_name">Посмотрите видео о нас</p>
+      <img class="content_img" src="img/efect.png" alt="эфект">
+    </div>
+  </main>
+</div>
+  <footer class="select">
+    <p class="select_text">2023 &copy; <a class="centr" href="#">учебный центр</a> </p>
+  </footer>
+  <div class="window_content">
+    <div class="window">
+     <form action="#">
+       <h4 class="row">Войти на сайт</h4>
+       <input class="login" type="text" placeholder="Логин">
+       <input class="password" type="text" placeholder="Пароль">
+       <a class="entrance" href="#">Войти</a>
+       <img class="cross" src="img/cross2.jpg" alt="крестик">
+     </form>
+    </div>
+    </div>
+ 
+    <script>
+    
+      const window_contentEl = document.querySelector('.window_content');
+      const buttonEl = document.querySelector('.button');
+      const crossEl = document.querySelector('.cross');
+      buttonEl.addEventListener('click', function (e) {
+        window_contentEl.classList.toggle('visible');
+      });
+      crossEl.addEventListener('click', function (e) {
+        window_contentEl.classList.remove('visible');
+      });
+ 
+    </script>
+</body>
+</html>
+      
+   
